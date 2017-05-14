@@ -40,8 +40,173 @@
   <ItemGroup>
     <PackageReference Update="NETStandard.Library" PrivateAssets="all" />
     <PackageReference Include="jetbrains.annotations" Version="10.4.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.1.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="1.1.0" PrivateAssets="all" />
     <PackageReference Include="ResharperCodeContractNullability" Version="1.0.8" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Esent.Interop">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Esent.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Tasks.CodeAnalysis">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.Build.Tasks.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.EditorFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.EditorFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Features">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.InteractiveEditorFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.InteractiveEditorFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.EditorFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.EditorFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.EditorFeatures.Text">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.EditorFeatures.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Elfie">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.Elfie.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Features">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.InteractiveEditorFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.InteractiveEditorFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.InteractiveFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.InteractiveFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Scripting">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.EditorFeatures">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.VisualBasic.EditorFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Features">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.VisualBasic.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces.Desktop">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.CodeAnalysis.Workspaces.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CSharp.Repl">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.CSharp.Repl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.InteractiveServices">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.InteractiveServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LanguageServices">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.LanguageServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LanguageServices.CSharp">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.LanguageServices.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LanguageServices.Implementation">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.LanguageServices.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LanguageServices.SolutionExplorer">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.LanguageServices.SolutionExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.LanguageServices.VisualBasic">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Microsoft.VisualStudio.LanguageServices.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Roslyn.VisualStudio.InteractiveComponents">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\Roslyn.VisualStudio.InteractiveComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.AttributedModel">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Composition.AttributedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Convention">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Composition.Convention.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Hosting">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Composition.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Runtime">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Composition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Composition.TypedParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>..\..\..\lib-roslyn-v2.3.pre\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

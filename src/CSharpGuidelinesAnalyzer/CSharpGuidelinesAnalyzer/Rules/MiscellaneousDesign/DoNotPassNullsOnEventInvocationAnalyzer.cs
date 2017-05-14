@@ -120,7 +120,8 @@ namespace CSharpGuidelinesAnalyzer.Rules.MiscellaneousDesign
         [CanBeNull]
         private IArgument GetSenderArgument([NotNull] IInvocationExpression invocation)
         {
-            IArgument argument = invocation.ArgumentsInParameterOrder.FirstOrDefault();
+            // TODO: Verify that .ArgumentsInEvaluationOrder is the correct replacement for .ArgumentsInParameterOrder
+            IArgument argument = invocation.ArgumentsInEvaluationOrder.FirstOrDefault();
 
             return argument != null && argument.Parameter.Name == "sender" &&
                 argument.Parameter.Type.SpecialType == SpecialType.System_Object
@@ -142,9 +143,11 @@ namespace CSharpGuidelinesAnalyzer.Rules.MiscellaneousDesign
         [CanBeNull]
         private IArgument GetArgsArgument([NotNull] IInvocationExpression invocation, [NotNull] INamedTypeSymbol systemEventArgs)
         {
-            if (invocation.ArgumentsInParameterOrder.Length == 2)
+            // TODO: Verify that .ArgumentsInEvaluationOrder is the correct replacement for .ArgumentsInParameterOrder
+            if (invocation.ArgumentsInEvaluationOrder.Length == 2)
             {
-                IArgument argument = invocation.ArgumentsInParameterOrder[1];
+                // TODO: Verify that .ArgumentsInEvaluationOrder is the correct replacement for .ArgumentsInParameterOrder
+                IArgument argument = invocation.ArgumentsInEvaluationOrder[1];
 
                 if (!string.IsNullOrEmpty(argument.Parameter?.Name) && IsEventArgs(argument.Parameter.Type, systemEventArgs))
                 {
